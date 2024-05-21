@@ -1,0 +1,125 @@
+/* planes.css */
+
+.banner {
+    margin-top: 60px;
+    text-align: center;
+  }
+  
+
+  
+  .texto-y-boton {
+    position: absolute;
+    top: 40%;
+    right: 75%;
+    transform: translate(50%, -50%);
+    color: white;
+    text-align: left;
+  }
+  
+  .texto-y-boton h2,
+  .texto-y-boton h1,
+  .texto-y-boton h4 {
+    text-align: left;
+  }
+  
+  .texto-y-boton h2{
+
+font-size: 40px;
+font-family: "Nunito";
+font-weight: 500;
+color: #4658A5;
+
+
+  }
+
+
+  .texto-y-boton h1{
+
+    font-size: 40px;
+    font-family: "Nunito";
+    font-weight: bold;
+    color: #424242;
+    
+    
+      }
+
+
+
+      .texto-y-boton h4{
+
+        font-size: 14px;
+        font-family: "Nunito";
+        font-weight: 100;
+        color: #ffffff;
+        
+        
+          }
+
+
+
+  .texto-y-boton button {
+    margin-top: 20px;
+    width: 273px;
+    height: 66px;
+    background-color: #4658A5;
+    border: none;
+    border-radius: 100px;
+    font-size: 20px;
+    color: aliceblue;
+    font-family: "Nunito";
+    /* Añadimos sombra */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Transición suave */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Cambiamos el color de fondo al hacer hover */
+  .texto-y-boton button:hover {
+    background-color: #34407d;
+    /* Añadimos una ligera transformación para dar la sensación de que el botón se hunde */
+    transform: translateY(2px);
+    /* Aumentamos la intensidad de la sombra al hacer hover */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .titulo-seccion {
+    text-align: center;
+  }
+  
+  .division-principal {
+    display: flex;
+  }
+  
+  .division-izquierda {
+    width: 674px;
+  }
+  
+  .division-derecha {
+    width: 860px;
+    background-color: color_de_fondo;
+  }
+  
+  .division-derecha img {
+    width: 100%;
+    height: 487px;
+  }
+  
+  .division-derecha-content {
+    padding: 20px;
+  }
+  
+  .division-inferior {
+    width: 100%;
+    height: 271px;
+    margin-top: 20px;
+  }
+  
+  .division-inferior div {
+    width: 255px;
+    height: 175px;
+    float: left;
+    margin: 0 10px;
+  }
+  
+  
