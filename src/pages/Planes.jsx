@@ -1,7 +1,7 @@
-import "../css/planes.css";
 import { useState } from "react";
 import Swal from "sweetalert2";
 import emailjs from "emailjs-com";
+import "../css/planes.css";
 
 export const Planes = () => {
   const [modalVisible, setModalVisible] = useState(false);
@@ -20,7 +20,7 @@ export const Planes = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_we2ealh", "template_kivmrlw", e.target, "Xk69zwDIuwgzs-7yk")
+      .sendForm("service_bi1p8tt", "template_9jzy2qr", e.target, "PKhKvnJcKT-OtLOyJ")
       .then(
         (result) => {
           console.log(result.text);
@@ -45,17 +45,12 @@ export const Planes = () => {
   return (
     <>
       <div className="banner">
-        <img
-          src="src/img-planes/Planes/Banner.png"
-          alt="Banner"
-          style={{ width: "100%" }}
-        />
+        <img src="src/img-planes/Planes/Banner.png" alt="Banner" style={{ width: "100%" }} />
         <div className="texto-y-boton-encima">
           <div className="texto-banner-izquierda">
-          <h2 className="subtitulo">Nuestros mejores planes para tu peludito</h2>
-<h1 className="titulo-principal">Protege a tu mascota</h1>
-<h5 className="texto-descriptivo">¡Cuida a tu compañero peludo con nuestros planes de salud personalizados!</h5>
-
+            <h2 className="subtitulo">Nuestros mejores planes para tu peludito</h2>
+            <h1 className="titulo-principal">Protege a tu mascota</h1>
+            <h5 className="texto-descriptivo">¡Cuida a tu compañero peludo con nuestros planes de salud personalizados!</h5>
           </div>
           <button
             className="boton-ver-planes"
@@ -71,24 +66,17 @@ export const Planes = () => {
         </div>
       </div>
 
-      {/* Sección de título */}
       <h1 className="titulo-principal">Nuestros Planes de Salud</h1>
 
-      {/* Plan 1 */}
       <div className="plan-container">
         <div className="imagen-plan">
-          <img
-            src="src/img-planes/Planes/Rectangle 4296.png"
-            alt="Descripción de la imagen"
-            style={{ width: "100%" }}
-          />
+          <img src="src/img-planes/Planes/Rectangle 4296.png" alt="Descripción de la imagen" style={{ width: "100%" }} />
         </div>
 
         <div className="contenido-plan plan-basico">
           <h1>Plan Básico</h1>
           <h3>
-            Nuestro plan básico ofrece los servicios esenciales para mantener la
-            salud de tu mascota al día. Incluye chequeos anuales, vacunas
+            Nuestro plan básico ofrece los servicios esenciales para mantener la salud de tu mascota al día. Incluye chequeos anuales, vacunas
             básicas, desparasitación, y descuentos en servicios adicionales.
             <br />
             <br />
@@ -99,72 +87,52 @@ export const Planes = () => {
             <br />
             - Vacunas básicas para la protección contra enfermedades comunes.
             <br />
-            - Desparasitación anual para prevenir infestaciones de parásitos
-            internos y externos.
+            - Desparasitación anual para prevenir infestaciones de parásitos internos y externos.
             <br />
-            - Descuentos en servicios adicionales como consultas de emergencia y
-            análisis de laboratorio.
-            <br />- Acceso a consejos y recomendaciones personalizadas para el
-            cuidado de tu mascota.
+            - Descuentos en servicios adicionales como consultas de emergencia y análisis de laboratorio.
+            <br />- Acceso a consejos y recomendaciones personalizadas para el cuidado de tu mascota.
           </h3>
-          <img
-            src="src/img-planes/textura.png"
-            alt="Imagen de fondo"
-            style={{ width: "100%", height: "397px", marginTop: "-350px" }}
-          />
+          <img src="src/img-planes/textura.png" alt="Imagen de fondo" style={{ width: "100%", height: "397px", marginTop: "-350px" }} />
           <div className="overlay">
             <h1>PRECIO: 12.520$ MENSUALES</h1>
-            <button onClick={() => openModal("Plan Básico")}>
-              Pedir más información
-            </button>
+            <button onClick={() => openModal("Plan Básico")}>Pedir más información</button>
           </div>
         </div>
       </div>
 
-      {/* Sección de Beneficios */}
       <div className="beneficios">
         <div className="beneficio">
-          <img src="src\img-planes\icono patita.png" alt="Chequeo Anual" />
+          <img src="src/img-planes/icono patita.png" alt="Chequeo Anual" />
           <h4>Chequeo Anual</h4>
           <p>Completo con nuestro veterinario.</p>
         </div>
         <div className="beneficio">
-          <img src="src\img-planes\icono patita.png" alt="Vacunas Básicas" />
+          <img src="src/img-planes/icono patita.png" alt="Vacunas Básicas" />
           <h4>Vacunas Básicas</h4>
           <p>Para la protección contra enfermedades comunes.</p>
         </div>
         <div className="beneficio">
-          <img
-            src="src\img-planes\icono patita.png"
-            alt="Desparasitación Anual"
-          />
+          <img src="src/img-planes/icono patita.png" alt="Desparasitación Anual" />
           <h4>Desparasitación Anual</h4>
           <p>Para prevenir infestaciones de parásitos.</p>
         </div>
         <div className="beneficio">
-          <img src="src\img-planes\icono patita.png" alt="Descuentos" />
+          <img src="src/img-planes/icono patita.png" alt="Descuentos" />
           <h4>Descuentos</h4>
           <p>En servicios adicionales como consultas de emergencia.</p>
         </div>
       </div>
 
-      {/* Plan 2 */}
       <div className="plan-container">
         <div className="imagen-plan">
-          <img
-            src="src\img-planes\Planes\Cacho-e-gato-juntos-no-chao-posando-pra-foto_3.webp"
-            alt="Descripción de la imagen"
-            style={{ width: "108.2%" }}
-          />
+          <img src="src/img-planes/Planes/Cacho-e-gato-juntos-no-chao-posando-pra-foto_3.webp" alt="Descripción de la imagen" style={{ width: "108.2%" }} />
         </div>
 
         <div className="contenido-plan plan-basico-2">
           <h1>Plan Básico Plus</h1>
           <h3>
-            Nuestro plan básico plus ofrece los servicios esenciales para
-            mantener la salud de tu mascota al día, con servicios adicionales.
-            Incluye chequeos anuales, vacunas básicas, desparasitación, y
-            descuentos en servicios adicionales.
+            Nuestro plan básico plus ofrece los servicios esenciales para mantener la salud de tu mascota al día, con servicios adicionales.
+            Incluye chequeos anuales, vacunas básicas, desparasitación, y descuentos en servicios adicionales.
             <br />
             <br />
             Beneficios:
@@ -174,72 +142,52 @@ export const Planes = () => {
             <br />
             - Vacunas básicas para la protección contra enfermedades comunes.
             <br />
-            - Desparasitación anual para prevenir infestaciones de parásitos
-            internos y externos.
+            - Desparasitación anual para prevenir infestaciones de parásitos internos y externos.
             <br />
-            - Descuentos en servicios adicionales como consultas de emergencia y
-            análisis de laboratorio.
-            <br />- Acceso a consejos y recomendaciones personalizadas para el
-            cuidado de tu mascota.
+            - Descuentos en servicios adicionales como consultas de emergencia y análisis de laboratorio.
+            <br />- Acceso a consejos y recomendaciones personalizadas para el cuidado de tu mascota.
           </h3>
-          <img
-            src="src/img-planes/textura.png"
-            alt="Imagen de fondo"
-            style={{ width: "100%", height: "397px", marginTop: "-350px" }}
-          />
+          <img src="src/img-planes/textura.png" alt="Imagen de fondo" style={{ width: "100%", height: "397px", marginTop: "-350px" }} />
           <div className="overlay">
             <h1>PRECIO: 20.520$ MENSUALES</h1>
-            <button onClick={() => openModal("Plan Básico Plus")}>
-              Pedir más información
-            </button>
+            <button onClick={() => openModal("Plan Básico Plus")}>Pedir más información</button>
           </div>
         </div>
       </div>
 
-      {/* Sección de Beneficios */}
       <div className="beneficios">
         <div className="beneficio">
-          <img src="src\img-planes\icono patita.png" alt="Chequeo Anual" />
+          <img src="src/img-planes/icono patita.png" alt="Chequeo Anual" />
           <h4>Chequeo Anual</h4>
           <p>Completo con nuestro veterinario.</p>
         </div>
         <div className="beneficio">
-          <img src="src\img-planes\icono patita.png" alt="Vacunas Básicas" />
+          <img src="src/img-planes/icono patita.png" alt="Vacunas Básicas" />
           <h4>Vacunas Básicas</h4>
           <p>Para la protección contra enfermedades comunes.</p>
         </div>
         <div className="beneficio">
-          <img
-            src="src\img-planes\icono patita.png"
-            alt="Desparasitación Anual"
-          />
+          <img src="src/img-planes/icono patita.png" alt="Desparasitación Anual" />
           <h4>Desparasitación Anual</h4>
           <p>Para prevenir infestaciones de parásitos.</p>
         </div>
         <div className="beneficio">
-          <img src="src\img-planes\icono patita.png" alt="Descuentos" />
+          <img src="src/img-planes/icono patita.png" alt="Descuentos" />
           <h4>Descuentos</h4>
           <p>En servicios adicionales como consultas de emergencia.</p>
         </div>
       </div>
 
-      {/* Plan 3 */}
       <div className="plan-container">
         <div className="imagen-plan">
-          <img
-            src="src\img-planes\Planes\186654806-adorable-gato-y-perro-sobre-fondo-blanco-lindos-amigos.jpg"
-            alt="Descripción de la imagen"
-            style={{ width: "76%" }}
-          />
+          <img src="src/img-planes/Planes/186654806-adorable-gato-y-perro-sobre-fondo-blanco-lindos-amigos.jpg" alt="Descripción de la imagen" style={{ width: "76%" }} />
         </div>
 
         <div className="contenido-plan plan-basico-3">
           <h1>Plan Básico Premium</h1>
           <h3>
-            Nuestro plan básico premium ofrece los servicios esenciales para
-            mantener la salud de tu mascota al día, con servicios adicionales y
-            soporte premium. Incluye chequeos anuales, vacunas básicas,
-            desparasitación, y descuentos en servicios adicionales.
+            Nuestro plan básico premium ofrece los servicios esenciales para mantener la salud de tu mascota al día, con servicios adicionales y
+            soporte premium. Incluye chequeos anuales, vacunas básicas, desparasitación, y descuentos en servicios adicionales.
             <br />
             <br />
             Beneficios:
@@ -249,56 +197,42 @@ export const Planes = () => {
             <br />
             - Vacunas básicas para la protección contra enfermedades comunes.
             <br />
-            - Desparasitación anual para prevenir infestaciones de parásitos
-            internos y externos.
+            - Desparasitación anual para prevenir infestaciones de parásitos internos y externos.
             <br />
-            - Descuentos en servicios adicionales como consultas de emergencia y
-            análisis de laboratorio.
-            <br />- Acceso a consejos y recomendaciones personalizadas para el
-            cuidado de tu mascota.
+            - Descuentos en servicios adicionales como consultas de emergencia y análisis de laboratorio.
+            <br />- Acceso a consejos y recomendaciones personalizadas para el cuidado de tu mascota.
           </h3>
-          <img
-            src="src/img-planes/textura.png"
-            alt="Imagen de fondo"
-            style={{ width: "100%", height: "397px", marginTop: "-350px" }}
-          />
+          <img src="src/img-planes/textura.png" alt="Imagen de fondo" style={{ width: "100%", height: "397px", marginTop: "-350px" }} />
           <div className="overlay">
             <h1>PRECIO: 20.520$ MENSUALES</h1>
-            <button onClick={() => openModal("Plan Básico Premium")}>
-              Pedir más información
-            </button>
+            <button onClick={() => openModal("Plan Básico Premium")}>Pedir más información</button>
           </div>
         </div>
       </div>
 
-      {/* Sección de Beneficios */}
       <div className="beneficios">
         <div className="beneficio">
-          <img src="src\img-planes\icono patita.png" alt="Chequeo Anual" />
+          <img src="src/img-planes/icono patita.png" alt="Chequeo Anual" />
           <h4>Chequeo Anual</h4>
           <p>Completo con nuestro veterinario.</p>
         </div>
         <div className="beneficio">
-          <img src="src\img-planes\icono patita.png" alt="Vacunas Básicas" />
+          <img src="src/img-planes/icono patita.png" alt="Vacunas Básicas" />
           <h4>Vacunas Básicas</h4>
           <p>Para la protección contra enfermedades comunes.</p>
         </div>
         <div className="beneficio">
-          <img
-            src="src\img-planes\icono patita.png"
-            alt="Desparasitación Anual"
-          />
+          <img src="src/img-planes/icono patita.png" alt="Desparasitación Anual" />
           <h4>Desparasitación Anual</h4>
           <p>Para prevenir infestaciones de parásitos.</p>
         </div>
         <div className="beneficio">
-          <img src="src\img-planes\icono patita.png" alt="Descuentos" />
+          <img src="src/img-planes/icono patita.png" alt="Descuentos" />
           <h4>Descuentos</h4>
           <p>En servicios adicionales como consultas de emergencia.</p>
         </div>
       </div>
 
-      {/* Modal */}
       {modalVisible && (
         <div className="modal">
           <div className="modal-content">
